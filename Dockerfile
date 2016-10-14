@@ -20,8 +20,9 @@ RUN set -x && \
     service crond start && \
     service crond reload && \
     msm jargroup create minecraft minecraft
-EXPOSE 25565 25566
+EXPOSE 25565 25566 25567
 CMD ["msm", "higashiyoka", "start"]
 CMD ["msm", "nishiyoka", "start"]
+CMD ["msm", "sovietunion", "start"]
 CMD ["bash"]
 
